@@ -6,6 +6,12 @@ $nav = [
         'Tecnologie',
         'Domande frequenti',
 ];
+$footerNav =[
+        'Google',
+        'Tutto su Google',
+        'Privacy',
+        'Termini',
+];
 $faqs = [
     [
         'question' => 'Come state implementando la recente decisione della Corte di giustizia dell\'Unione europea (CGUE) relativa al diritto all\'oblio?',
@@ -83,6 +89,7 @@ $faqs = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -111,6 +118,22 @@ $faqs = [
             </ul>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+    <div class="footer-nav">
+            <ul class="footer-nav"><?php foreach($footerNav as $key => $footerItem){ ?>
+                <li class="footer-item"><a href=""><?= $footerItem; ?></a></li>
+        <?php } ?>
+            
+            </ul>
+        </div>
+        <div>
+            <i class="fas fa-globe"></i>
+            <select name="language" id="langauge">
+                <option value="italian">Italiano</option>
+                <option value="english">English</option>
+                <option value="dansk">Dansk</option>
+            </select>
+        </div>
+    </footer>
 </body>
 </html>
