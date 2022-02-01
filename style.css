@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+/* Sezioni */
+    /* Header */
+header{
+    height: 100px;
+    width: 100%;
+    padding: 1em;
+    border-bottom: solid 2px lightgrey;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+}
+.nav-item{
+    font-weight: 500;
+    color: rgb(82, 81, 81);
+    height: 100%;
+}
+.nav-item:hover{
+    border-bottom: solid 3px rgb(33, 33, 255);
+    cursor: pointer;
+    color: blue;
+}
+.upper{
+    display: flex;
+    height: 50%;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.lower{
+    height: 50%;
+}
+.logo{
+    height: 100%;
+    margin-right: 0.8em;
+}
+    /* Main */
+.main{
+    width: 40%;
+    margin: 0 auto;
+}
+.main-list{
+    list-style: none;
+}
+.main-item{
+    margin-bottom: 2em;
+}
+    /* Footer */
+footer{
+    height: 80px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.footer-item{
+    font-weight: 300;
+    color: rgb(82, 81, 81);
+    height: 100%;
+    font-size: 0.6em;
+    
+}
+.footer-item a {
+    text-decoration: none;
+}
+/* Testi */
+h2{
+    font-size: 1.3em;
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+}
+h3{
+    font-size: 1.5em;
+    color: rgb(46, 46, 46);
+    margin: 2em 0 ;
+}
+h5{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+p{
+    margin: 1em 0;
+}
+.p-left{
+    padding-left: 3em;
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.fas{
+    color: blue;
+}
